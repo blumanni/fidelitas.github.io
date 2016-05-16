@@ -3,9 +3,12 @@
 <head>
   <title>Annemarie Mörl</title>
   <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="css/slidejs.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
     <header class="container" id="header">
@@ -30,31 +33,16 @@
     </div>
 </header>
   <section class="container">
-    <div class="row">
-    	<figure class="col-sm-6">
-          <img src="images/1_7th1.png" alt=""/>
-    	</figure>
-    	<figure class="col-sm-6">
-    		<img src="images/1_7th2.jpg" alt=""/>
-      </figure>
+    <div id="slides">
+      <img src="img/1_7th1.png" alt="">
+      <img src="img/1_7th2.jpg" alt="">
+      <img src="img/1_7th3.jpg" alt="">
+      <img src="img/1_cpw2.jpg" alt="">
+      <img src="img/1_cs1.png" alt="">
+      <img src="img/1_cs2.png" alt="">
+      <img src="img/1_cs3.jpg" alt="">
     </div>
-    <div class="row">
-    	<figure class="col-sm-6">
-          <img src="images/1_cpw2.jpg" alt=""/>
-    	</figure>
-    	<figure class="col-sm-6">
-    		<img src="images/1_cs1.png" alt=""/>
-      </figure>
-    </div>
-    <div class="row">
-    	<figure class="col-sm-6">
-          <img src="images/1_cs2.png" alt=""/>
-    	</figure>
-    	<figure class="col-sm-6">
-    		<img src="images/1_cs3.jpg" alt=""/>
-      </figure>
-    </div>
-  </section>
+  </div>
 </section>
 <footer class="container navbar navbar-static-bottom">
   <div class="row">
@@ -62,11 +50,34 @@
     <ul class="col-sm-8">
       <li class="col-sm-1">
         <a href="https://www.linkedin.com/in/annemarie-moerl-8b347330" target="_blank">
-          <img src="images/In-2C-66px-R.png" alt="LinkedIn">
+          <img src="img/In-2C-66px-R.png" alt="LinkedIn">
         </a>
       </li>
     </ul>
   </div>
 </footer>
+<!-- SlidesJS Required: Link to jQuery -->
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<!-- End SlidesJS Required -->
+
+<!-- SlidesJS Required: Link to jquery.slides.js -->
+<script src="js/jquery.slides.min.js"></script>
+<!-- End SlidesJS Required -->
+
+<!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+<script>
+  $(function() {
+    $('#slides').slidesjs({
+      width: 940,
+      height: 528,
+      play: {
+        active: true,
+        auto: true,
+        interval: 6000,
+        swap: false
+      }
+    });
+  });
+</script>
 </body>
 </html>

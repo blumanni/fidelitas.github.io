@@ -56,6 +56,14 @@ section .row img {
   width: 100%;
 }
 
+section .press-row {
+  opacity: 0.6;
+}
+
+section .press-row:hover {
+  opacity: 1;
+}
+
 .col-md-6 {
   margin: 0 0 30px;
 }
