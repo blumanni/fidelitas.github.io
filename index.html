@@ -68,14 +68,16 @@
 <script>
   $(function() {
     $('#slides').slidesjs({
-      width: 940,
-      height: 528,
+      width: 650,
+      height: 423,
       play: {
         active: true,
         auto: true,
-        interval: 6000,
-        swap: false
-      }
+        interval: 4000,
+        swap: false,
+	effect: "fade",
+	pauseOnHover: true,
+      },
     });
   });
 </script>
