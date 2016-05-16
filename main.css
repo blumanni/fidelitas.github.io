@@ -3,6 +3,10 @@ body {
   font-weight: 300;
 }
 
+.container {
+  margin: 10px;
+}
+
 header {
   padding: 20px 0;
 }
