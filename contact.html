@@ -3,33 +3,46 @@
 <head>
   <title>Annemarie Mörl</title>
   <meta charset="utf-8"/>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" href="css/slidejs.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
-<header class="container navbar navbar-static-top" id="header">
-    <div class="row">
-        <a href="contact.html">
-    	<h1 class="col-sm-4">contact</h1>
-        </a>
-        <nav class="col-sm-8 text-right">
-            <a href="index.html">
-    	     <p>main</p>
-            </a>
-            <a href="resume.html">
-    	     <p>resume</p>
-            </a>
-            <a href="press.html">
-    	     <p>press</p>
-            </a>
-            <a href="contact.html">
-    	     <p>contact</p>
-            </a>
-        </nav>
-    </div>
-</header>
 <body>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+   <div class="container">
+     <div class="navbar-header">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="#">Annemarie Mörl</a>
+     </div>
+     <div class="navbar-collapse collapse">
+       <ul class="nav navbar-nav navbar-right">
+         <li><a href="index.html">main</a></li>       
+         <li><a href="resume.html">resume</a></li>
+         <li><a href="press.html">press</a></li>
+         <li class="active"><a href="contact.html">contact</a></li>
+       </ul>
+     </div><!--/.nav-collapse -->
+   </div>
+ </div>
+  <section class="container container-slides">
+    <div id="slides">
+      <img src="img/1_7th1.png" alt="">
+      <img src="img/1_7th2.jpg" alt="">
+      <img src="img/1_7th3.jpg" alt="">
+      <img src="img/1_cpw2.jpg" alt="">
+      <img src="img/1_cs1.png" alt="">
+      <img src="img/1_cs2.png" alt="">
+      <img src="img/1_cs3.jpg" alt="">
+    </div>
+  </div>
 <div class=container>
 <div class="row">
   <p class="col-sm-4"><a href="mailto:info@annemariemoerl.com">info@annemariemoerl.com</a></p>
@@ -50,5 +63,8 @@
     </ul>
   </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.slides.min.js"></script>
 </body>
 </html>

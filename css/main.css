@@ -15,10 +15,6 @@ a {
   color: black;
 }
 
-ul {
-  list-style: none;
-}
-
 a:active {
   color: gray;
   text-decoration: none;
@@ -27,6 +23,9 @@ a:active {
 a:hover {
   text-decoration: none;
   color: gray;
+}
+ul {
+  list-style: none;
 }
 
 header .row,
