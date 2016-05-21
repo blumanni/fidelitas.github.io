@@ -9,9 +9,72 @@
   <link rel="stylesheet" href="css/slidejs.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
 
 </head>
 <body>
-  <h1>This page is in maintenance mode, please come back later.</h1>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+   <div class="container">
+     <div class="navbar-header">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="#">Annemarie Mörl</a>
+     </div>
+     <div class="navbar-collapse collapse">
+       <ul class="nav navbar-nav navbar-right">
+         <li class="active"><a href="index.html">main</a></li>       
+         <li><a href="resume.html">resume</a></li>
+         <li><a href="press.html">press</a></li>
+         <li><a href="contact.html">contact</a></li>
+       </ul>
+     </div><!--/.nav-collapse -->
+   </div>
+ </div>
+  <section class="container">
+    <div id="slides" class="center-block">
+      <img src="img/1_7th1.png" alt="">
+      <img src="img/1_7th2.jpg" alt="">
+      <img src="img/1_7th3.jpg" alt="">
+      <img src="img/1_cpw2.jpg" alt="">
+      <img src="img/1_cs1.png" alt="">
+      <img src="img/1_cs2.png" alt="">
+      <img src="img/1_cs3.jpg" alt="">
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container text-center navbar-static-bottom">
+	  <div class="row">
+	<p class="col-sm-4">&copy; 2016 Annemarie Mörl</p>
+	<p class='col-sm-10'>
+      <a href="https://www.linkedin.com/in/annemarie-moerl-8b347330" target="_blank"><i class="fa fa-linkedin"></i></a>
+      </p>
+  </div><!--End container-->
+</footer><!--End footer 2-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.slides.min.js"></script>
+<script>
+  $(function() {
+    $('#slides').slidesjs({
+      width: 650,
+      height: 423,
+      play: {
+        active: false,
+        auto: true,
+        interval: 4000,
+        swap: true,
+	effect: "fade",
+	pauseOnHover: false,
+      },
+      navigation: {active: false},
+      pagination: {active: false},
+    });
+  });
+</script>
 </body>
 </html>
